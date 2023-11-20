@@ -10,25 +10,25 @@ General Entry
 
 Scale Implementation and Initial Function
 
-	•	Initial Function: It’s the first function called when Virtuoso starts from a script.
+	•	Initial Function: It’s the first function called when the program starts from a script.
 	•	Executable/Shell Script Role: Checks the template and project file for basic requirements like file size and readability.
-	•	Function Flow: Involves loading the input file, running PDKEQ batch start, and executing specific testbench processes.
+	•	Function Flow: Involves loading the input file, running batch start, and executing specific testbench processes.
 
 Data Structure Initialization and Validation
 
-	•	Global Data Structure: Differentiates between UI-related data (PDKEQ High Info) and algorithm/run flow data (PDKEQ Info).
-	•	Batch Mode Focus: Emphasizes initializing PDKEQ Info data structure, as UI elements are not needed.
+	•	Global Data Structure: Differentiates between UI-related data (global High Info) and algorithm/run flow data (global Info).
+	•	Batch Mode Focus: Emphasizes initializing global Info data structure, as UI elements are not needed.
 	•	Validation: Includes functions like validating header and input, ensuring mandatory fields are specified, and handling errors.
 
 Loading and Running Testbenches
 
 	•	Testbench Types: Allows for different types of testbench data, either as symbols or strings.
-	•	Function Execution: Utilizes PDKEQ P cell batch function for specific tasks like extracting data and running testbench flows.
+	•	Function Execution: Utilizes TB-specific batch function for specific tasks like extracting data and running testbench flows.
 	•	Data Handling: Focuses on loading and validating different input types depending on the testbench requirement.
 
 Additional Settings and Error Handling
 
-	•	Settings Customization: Explains how to specify settings for different test types like Excel compliance, DRD, LVS, DRC, and code coverage.
+	•	Settings Customization: Explains how to specify settings for different test types like all the test modes we have.
 	•	Error and Warning Messages: Includes checking for invalid fields and providing feedback to the user.
 	•	Test Implementation: Discusses test permutations, input file structure, and the quick test method for validating batch mode operations.
 
@@ -43,4 +43,4 @@ Conclusion and Integration with UI Mode
 	•	Batch Start and Successful Run Indicator: Marks the end of the batch process and returns success status.
 	•	Integration with UI Mode: Notes similarities and differences with the UI mode, highlighting the specific changes for batch mode.
 
-This summary captures the key elements of the video, focusing on the batch mode implementation, its components, data structures, validation processes, testbench handling, and integration aspects.
+This summary captures the key elements, focusing on the batch mode implementation, its components, data structures, validation processes, testbench handling, and integration aspects.
